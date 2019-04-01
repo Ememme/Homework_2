@@ -1,5 +1,11 @@
 .page-navigation {
-    // margin-bottom: 140px;
+    &__items  {    
+        padding-top: 60px;
+        padding-left: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
     &__link,
     &__link:visited {
         text-decoration: none;
@@ -26,12 +32,4 @@
 		background: darken($grey-main-color, 13%);
         transition: .4s;
     }
-}
-
-
-.page-navigation__items {
-    padding-top: 60px;
-    padding-left: 100px;
-    display: flex;
-    justify-content: space-around;
 }
