@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:500i|Roboto:100,400,500,700);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400; }
+
+.page-logo {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1.5rem; }
+
+.cocktails-gallery__description {
+  font-family: 'Roboto', sans-serif; }
+
+.page-wrapper {
+  margin: 50px;
+  padding: 80px;
+  background-color: #EDF7F5; }
+
+.page-navigation__link, .page-navigation__link:visited {
+  text-decoration: none;
+  position: relative;
+  color: #c6e6df; }
+  .page-navigation__link:hover, .page-navigation__link:active, .page-navigation__link:visited:hover, .page-navigation__link:visited:active {
+    color: #0E0E0E; }
+
+.page-navigation__link::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  bottom: -5px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 80%; }
+
+.page-navigation__link:hover::after {
+  background: #bfe3dc;
+  transition: .4s; }
+
+.page-navigation__items {
+  padding-top: 60px;
+  padding-left: 100px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around; }
+
+.contact {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  color: #dee0e4; }
+  .contact__address {
+    display: -webkit-flex;
+    display: flex;
+    margin-left: 80px; }
+  .contact__email {
+    color: #0E0E0E;
+    margin-left: 10px; }
+
+.social-links {
+  display: -webkit-flex;
+  display: flex;
+  margin-right: 80px; }
+  .social-links__link {
+    margin-right: 15px;
+    color: #dee0e4; }
+  .social-links__text {
+    color: #b4b8c2;
+    margin-right: 5px; }
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 30px; }
+
+::-webkit-scrollbar-thumb {
+  background: slategrey; }
+
+::-webkit-scrollbar-track {
+  background: #b8c0c8; }
+
+body {
+  scrollbar-face-color: slategrey;
+  scrollbar-track-color: #b8c0c8; }
+
+.cocktails-gallery {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  overflow-y: scroll;
+  margin-left: 80px; }
+  .cocktails-gallery__item, .cocktails-gallery__image {
+    width: 300px;
+    height: 300px; }
+  .cocktails-gallery__item {
+    position: relative;
+    margin: 20px; }
+    .cocktails-gallery__item:active, .cocktails-gallery__item:hover {
+      border: 5px solid #FBE1B9; }
+  .cocktails-gallery__description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center; }
+
+.page-logo {
+  display: block;
+  width: 100px;
+  height: 30px;
+  border: 2px solid #0E0E0E;
+  color: #0E0E0E;
+  position: absolute;
+  top: 25px;
+  left: 70px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center; }
+
