@@ -1,0 +1,32 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    color: $grey-light-color;
+
+    &__address {
+        display: flex;
+        margin-left: 80px;
+    }
+    &__email {
+        color: $black;
+        margin-left: 10px;
+    }
+    
+}
+
+.social-links {
+    display: flex;
+    margin-right: 80px;
+    
+
+    &__link {
+        margin-right: 15px;
+        color: $grey-light-color;
+    }
+
+    &__text {
+        color: darken($grey-light-color, 15%);
+        margin-right: 5px;
+    }
+    
+}

@@ -1,1 +1,15 @@
+@import "./abstracts/variables";
 @import "./base/reset";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/mixins";
+@import "./layout/wrapper";
+@import "./layout/navigation";
+@import "./layout/footer";
+@import "./components/gallery_item";
+@import "./components/logo"
+
+// background-color: #EDF7F5;
+// accent-color: #FCE0B3;
+// darker: #D3E2E0;
+// darkest text: #8E9BA6

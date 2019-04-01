@@ -1,0 +1,37 @@
+.page-navigation {
+    // margin-bottom: 140px;
+    &__link,
+    &__link:visited {
+        text-decoration: none;
+        position: relative; 
+        color: darken($grey-main-color, 11%);
+        
+        &:hover,
+        &:active { 
+            color: $black;    
+        }
+    }
+
+    &__link::after  {
+        position: absolute;
+        content: '';
+        height: 2px;
+        bottom: -5px; 
+        margin: 0 auto;
+		left: 0;
+        right: 0;
+		width: 80%;
+    }
+    &__link:hover::after {
+		background: darken($grey-main-color, 13%);
+        transition: .4s;
+    }
+}
+
+
+.page-navigation__items {
+    padding-top: 60px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-around;
+}

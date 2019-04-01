@@ -1,0 +1,37 @@
+@include scrollbars(2px, slategrey);
+
+.cocktails-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-y: scroll;
+    margin-left: 80px;
+
+    &__item,
+    &__image {
+        width: 300px;
+        height: 300px;
+    }
+
+    &__item {
+        position: relative;
+        margin: 20px;
+
+        &:active,
+        &:hover {
+            border: 5px solid #FBE1B9;
+        }
+    }
+
+    &__description {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
