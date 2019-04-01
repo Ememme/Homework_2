@@ -22,6 +22,11 @@
     &__link {
         margin-right: 15px;
         color: $grey-light-color;
+
+        &:hover,
+        &:active {
+            color: darken($grey-light-color, 35%);
+        }
     }
 
     &__text {
