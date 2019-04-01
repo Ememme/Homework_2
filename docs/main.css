@@ -55,7 +55,7 @@ body {
 
 .page-logo {
   font-family: 'Alegreya Sans', sans-serif;
-  font-size: 1.5rem; }
+  font-size: 24px; }
 
 .cocktails-gallery__description {
   font-family: 'Roboto', sans-serif; }
@@ -64,6 +64,14 @@ body {
   margin: 50px;
   padding: 80px;
   background-color: #EDF7F5; }
+
+.page-navigation__items {
+  padding-top: 60px;
+  padding-left: 100px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around; }
 
 .page-navigation__link, .page-navigation__link:visited {
   text-decoration: none;
@@ -86,14 +94,6 @@ body {
   background: #bfe3dc;
   transition: .4s; }
 
-.page-navigation__items {
-  padding-top: 60px;
-  padding-left: 100px;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: space-around;
-          justify-content: space-around; }
-
 .contact {
   display: -webkit-flex;
   display: flex;
@@ -115,6 +115,8 @@ body {
   .social-links__link {
     margin-right: 15px;
     color: #dee0e4; }
+    .social-links__link:hover, .social-links__link:active {
+      color: #7c8494; }
   .social-links__text {
     color: #b4b8c2;
     margin-right: 5px; }
@@ -171,6 +173,5 @@ body {
   top: 25px;
   left: 70px;
   padding: 10px;
-  font-size: 20px;
   text-align: center; }
 
